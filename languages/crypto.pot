@@ -1,0 +1,373 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-12-11 08:06+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Loco https://localise.biz/"
+
+#. 1: title.
+#: comments.php:34
+#, php-format
+msgid "One thought on &ldquo;%1$s&rdquo;"
+msgstr ""
+
+#. 1: comment count number, 2: title.
+#: comments.php:40
+#, php-format
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:63
+msgid "Comments are closed."
+msgstr ""
+
+#: footer.php:22
+msgid "Получите консультацию о проектах сообщества, заполнив форму справа"
+msgstr ""
+
+#: footer.php:85
+msgid "Следите за нами, чтобы получать последние новости из криптовселенной"
+msgstr ""
+
+#. Name of the template
+msgid "Шаблон \"Лендинг\""
+msgstr ""
+
+#. Name of the template
+msgid "Шаблон \"Блог\""
+msgstr ""
+
+#: functions.php:47
+msgid "Primary"
+msgstr ""
+
+#: functions.php:48
+msgid "Footer"
+msgstr ""
+
+#: functions.php:106
+msgid "Sidebar"
+msgstr ""
+
+#: functions.php:108 functions.php:118
+msgid "Add widgets here."
+msgstr ""
+
+#: functions.php:116
+msgid "Language switcher"
+msgstr ""
+
+#. Name of the template
+msgid "Шаблон \"Главная\""
+msgstr ""
+
+#: theme/visual_composer_init.php:75
+msgid "Enable container?"
+msgstr ""
+
+#. %s: post date.
+#: inc/template-tags.php:29
+#, php-format
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr ""
+
+#. %s: post author.
+#: inc/template-tags.php:35
+#, php-format
+msgctxt "post author"
+msgid "by %s"
+msgstr ""
+
+#. used between list items, there is a space after the comma
+#: inc/template-tags.php:52
+msgid ", "
+msgstr ""
+
+#. 1: list of categories.
+#: inc/template-tags.php:55
+#, php-format
+msgid "Posted in %1$s"
+msgstr ""
+
+#. used between list items, there is a space after the comma
+#: inc/template-tags.php:59
+msgctxt "list item separator"
+msgid ", "
+msgstr ""
+
+#. 1: list of tags.
+#: inc/template-tags.php:62
+#, php-format
+msgid "Tagged %1$s"
+msgstr ""
+
+#. %s: post title
+#: inc/template-tags.php:72
+#, php-format
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr ""
+
+#. %s: Name of current post. Only visible to screen readers
+#. %s: Name of current post. Only visible to screen readers
+#: inc/template-tags.php:89 template-parts/content-page.php:35
+#, php-format
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr ""
+
+#. %s: Name of current post. Only visible to screen readers
+#: template-parts/content.php:34
+#, php-format
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr ""
+
+#: template-parts/content.php:45 template-parts/content-page.php:22
+msgid "Pages:"
+msgstr ""
+
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#. 1: link to WP admin new post page.
+#: template-parts/content-none.php:25
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/content-none.php:38
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: template-parts/content-none.php:44
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: theme/vc-elements/vc_new_partner_phase.php:26
+#: theme/vc-elements/vc_new_partner_phase.php:28
+msgid "Фаза"
+msgstr ""
+
+#: theme/vc-elements/vc_new_partner_phase.php:29
+#: theme/vc-elements/vc_new_video_review.php:29
+#: theme/vc-elements/vc_new_partner.php:29
+#: theme/vc-elements/vc_new_quote.php:29 theme/vc-elements/vc_new_icon.php:29
+#: theme/vc-elements/vc_new_partner_scheme.php:29
+#: theme/vc-elements/vc_new_screen_review.php:29
+#: theme/vc-elements/vc_new_event.php:29 theme/vc-elements/vc_new_title.php:29
+#: theme/vc-elements/vc_new_event_large.php:29
+#: theme/vc-elements/vc_new_numbers.php:29
+msgid "Для работы с сайтом"
+msgstr ""
+
+#: theme/vc-elements/vc_new_partner_phase.php:35
+msgid "Название этапа"
+msgstr ""
+
+#: theme/vc-elements/vc_new_partner_phase.php:38
+msgid "Введите Название этапа. Например: `Второе бесплатное видео` "
+msgstr ""
+
+#: theme/vc-elements/vc_new_partner_phase.php:44
+msgid "Дата этапа"
+msgstr ""
+
+#: theme/vc-elements/vc_new_partner_phase.php:47
+msgid "Введите Дату. Например: 1/11"
+msgstr ""
+
+#: theme/vc-elements/vc_new_partner_phase.php:53
+#: theme/vc-elements/vc_new_partner_scheme.php:62
+#: theme/vc-elements/vc_new_title.php:44
+msgid "Дополнительный класс"
+msgstr ""
+
+#: theme/vc-elements/vc_new_partner_phase.php:56
+#: theme/vc-elements/vc_new_partner_scheme.php:56
+#: theme/vc-elements/vc_new_partner_scheme.php:65
+#: theme/vc-elements/vc_new_title.php:47
+#: theme/vc-elements/vc_new_event_large.php:60
+#: theme/vc-elements/vc_new_event_large.php:71
+msgid "Необязательно."
+msgstr ""
+
+#: theme/vc-elements/vc_new_video_review.php:26
+msgid "Видео отзыв"
+msgstr ""
+
+#: theme/vc-elements/vc_new_video_review.php:28
+msgid "Видео"
+msgstr ""
+
+#: theme/vc-elements/vc_new_partner.php:26
+#: theme/vc-elements/vc_new_partner.php:28
+msgid "Партнер"
+msgstr ""
+
+#: theme/vc-elements/vc_new_partner.php:57 theme/vc-elements/vc_new_icon.php:57
+#: theme/vc-elements/vc_new_numbers.php:44
+msgid "Описание"
+msgstr ""
+
+#: theme/vc-elements/vc_new_partner.php:60 theme/vc-elements/vc_new_icon.php:60
+#: theme/vc-elements/vc_new_numbers.php:47
+msgid "Введите Описание."
+msgstr ""
+
+#: theme/vc-elements/vc_new_quote.php:26 theme/vc-elements/vc_new_quote.php:28
+#: theme/vc-elements/vc_new_quote.php:38
+msgid "Текстовая цитата"
+msgstr ""
+
+#: theme/vc-elements/vc_new_quote.php:35
+msgid "Отзыв"
+msgstr ""
+
+#: theme/vc-elements/vc_new_icon.php:26 theme/vc-elements/vc_new_icon.php:28
+msgid "Блок с иконками"
+msgstr ""
+
+#: theme/vc-elements/vc_new_partner_scheme.php:26
+#: theme/vc-elements/vc_new_partner_scheme.php:28
+msgid "Схема воронки продаж"
+msgstr ""
+
+#: theme/vc-elements/vc_new_partner_scheme.php:35
+msgid "Количество"
+msgstr ""
+
+#: theme/vc-elements/vc_new_partner_scheme.php:38
+msgid "Введите количество"
+msgstr ""
+
+#: theme/vc-elements/vc_new_partner_scheme.php:44
+#: theme/vc-elements/vc_new_partner_scheme.php:47
+msgid "Индекс"
+msgstr ""
+
+#: theme/vc-elements/vc_new_partner_scheme.php:53
+msgid "Основной текст"
+msgstr ""
+
+#: theme/vc-elements/vc_new_screen_review.php:26
+#: theme/vc-elements/vc_new_screen_review.php:28
+msgid "Скриншоты с соц.сети (телеграм, вк...)"
+msgstr ""
+
+#: theme/vc-elements/vc_new_event.php:26 theme/vc-elements/vc_new_event.php:28
+msgid "Мероприятие"
+msgstr ""
+
+#: theme/vc-elements/vc_new_event.php:58
+msgid "Описание Мероприятия:"
+msgstr ""
+
+#: theme/vc-elements/vc_new_event.php:61
+msgid "Введите описание мероприятия."
+msgstr ""
+
+#: theme/vc-elements/vc_new_event.php:67
+#: theme/vc-elements/vc_new_event_large.php:89
+msgid "Ссылка на Мероприятие"
+msgstr ""
+
+#: theme/vc-elements/vc_new_event.php:70
+#: theme/vc-elements/vc_new_event_large.php:92
+msgid "Введите ссылку мероприятия."
+msgstr ""
+
+#: theme/vc-elements/vc_new_title.php:26 theme/vc-elements/vc_new_title.php:28
+#: theme/vc-elements/vc_new_title.php:35
+#: theme/vc-elements/vc_new_numbers.php:35
+msgid "Заголовок"
+msgstr ""
+
+#: theme/vc-elements/vc_new_title.php:38
+#: theme/vc-elements/vc_new_numbers.php:38
+msgid "Введите Заголовок."
+msgstr ""
+
+#: theme/vc-elements/vc_new_event_large.php:26
+#: theme/vc-elements/vc_new_event_large.php:28
+msgid "Мероприятие (большой формат)"
+msgstr ""
+
+#: theme/vc-elements/vc_new_event_large.php:35
+#: theme/vc-elements/vc_new_event_large.php:38
+msgid "Выберите картинку"
+msgstr ""
+
+#: theme/vc-elements/vc_new_event_large.php:37
+msgid "Default value"
+msgstr ""
+
+#: theme/vc-elements/vc_new_event_large.php:46
+msgid "Заголовок:"
+msgstr ""
+
+#: theme/vc-elements/vc_new_event_large.php:49
+msgid "Введите заголовок."
+msgstr ""
+
+#: theme/vc-elements/vc_new_event_large.php:57
+msgid "Верхний индекс у заголовка:"
+msgstr ""
+
+#: theme/vc-elements/vc_new_event_large.php:68
+msgid "Скидка:"
+msgstr ""
+
+#: theme/vc-elements/vc_new_event_large.php:80
+msgid "Описание:"
+msgstr ""
+
+#: theme/vc-elements/vc_new_event_large.php:83
+msgid "Введите описание."
+msgstr ""
+
+#: theme/vc-elements/vc_new_event_large.php:110
+msgid "Количество просмотров:"
+msgstr ""
+
+#: theme/vc-elements/vc_new_event_large.php:113
+msgid "Введите количество просмотров."
+msgstr ""
+
+#: theme/vc-elements/vc_new_numbers.php:26
+#: theme/vc-elements/vc_new_numbers.php:28
+msgid "Блок с цифрами"
+msgstr ""
+
+#. Name of the theme
+msgid "crypto"
+msgstr ""
+
+#. Description of the theme
+msgid "It\\'s site for crypto."
+msgstr ""
+
+#. URI of the theme
+#. Author URI of the theme
+msgid "http://underscores.me/"
+msgstr ""
+
+#. Author of the theme
+msgid "Kurochka"
+msgstr ""
