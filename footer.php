@@ -137,6 +137,44 @@
 			</div>
 		</div>
 	</footer>
+	<!-- Place  Scripts -->
+  <?php 
+	  if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
+	    $ip = $_SERVER['HTTP_CLIENT_IP'];
+	} elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) {
+	    $ip = $_SERVER['HTTP_X_FORWARDED_FOR'];
+	} else {
+	    $ip = $_SERVER['REMOTE_ADDR'];
+	}
+	$data = file_get_contents("http://www.geoplugin.net/json.gp?ip=" . $ip);
+	$data = json_decode($data);
+	?>
+	<script src="<?php echo get_template_directory_uri(); ?>/js/intlTelInput/intlTelInput.js"></script>
+	<script>
+		jQuery(document).ready(function(){
+			jQuery("input[type='tel']").intlTelInput({
+	      // allowDropdown: false,
+	      // autoHideDialCode: false,
+	      // autoPlaceholder: "off",
+	      // dropdownContainer: "body",
+	      // excludeCountries: ["us"],
+	      // formatOnDisplay: false,
+	       geoIpLookup: function(callback) {
+
+	          callback("<?php echo $data->geoplugin_countryCode ?>");
+	  
+	       },
+	      // hiddenInput: "full_number",
+	      initialCountry: "auto",
+	       nationalMode: false,
+	      // onlyCountries: ['us', 'gb', 'ch', 'ca', 'do'],
+	      // placeholderNumberType: "MOBILE",
+	       preferredCountries: ['uk', 'ru'],
+	      // separateDialCode: true,
+	      utilsScript: "<?php echo get_template_directory_uri(); ?>/js/intlTelInput/utils.js"
+	    });
+		});
+	</script>
 </div><!-- #page -->
 
 <?php wp_footer(); ?>

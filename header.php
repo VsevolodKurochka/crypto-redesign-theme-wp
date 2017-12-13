@@ -147,9 +147,9 @@
 
             elseif( is_404() ) :
             	if(get_locale() == 'ru_RU'):
-              	esc_html_e( 'К сожалению! Эта страница не найдена.', 'crypto' );
+              	_e( '404!<br> Эта страница не найдена.', 'crypto' );
               else:
-              	esc_html_e( 'Unfortunately! This page was not found.', 'crypto' );
+              	_e( '404!<br> This page was not found.', 'crypto' );
               endif;
 
             elseif( is_tax() ) :

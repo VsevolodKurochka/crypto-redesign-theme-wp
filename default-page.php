@@ -1,8 +1,9 @@
 <?php get_header(); ?>
-<section class="vsection">
+<?php require get_template_directory() . '/theme/helpers/variables.php'; ?>
+<section class="<?php echo $theme_section; ?>">
   <div class="vcontainer">
-    <div class="vrow">
-      <div class="vcol-12 vcol-md-8">
+    <div class="<?php echo $theme_row; ?>">
+      <div class="<?php echo $theme_part_content; ?>">
         <div class="vrow">
           <?php if ( have_posts() ) :  while ( have_posts() ) : the_post(); ?>
             <div class="vcol-12 vcol-sm-6">
@@ -26,7 +27,7 @@
           <?php wp_pagenavi(); ?>
         </div>
       </div>
-      <div class="vcol-12 vcol-md-4">
+      <div class="<?php echo $theme_part_sidebar; ?>">
         <?php get_template_part( 'sidebar'); ?> 
       </div>
     </div>

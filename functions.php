@@ -138,7 +138,8 @@ add_action( 'widgets_init', 'crypto_widgets_init' );
 
 function crypto_scripts() {
 
-
+	wp_enqueue_style( 'crypto-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'crypto-intlTelInput-css', get_template_directory_uri() . '/js/intlTelInput/intlTelInput.css');
 	if( is_front_page() ){
 		wp_enqueue_script( 'crypto-owl-js', get_template_directory_uri() . '/js/owl/owl.carousel.min.js', array('jquery'), '20151215', true );
 		wp_enqueue_script( 'crypto-vectormap-js', get_template_directory_uri() . '/js/vectormap/jquery-jvectormap-2.0.3.min.js', array('jquery'), '20151215', true );
@@ -162,11 +163,11 @@ function crypto_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'crypto_scripts' );
 
-function crypto_add_footer_styles() {
-		wp_enqueue_style( 'crypto-style', get_stylesheet_uri() );
-		//wp_enqueue_style( 'crypto-vectormap-css', get_template_directory_uri() . '/js/vectormap/jquery-jvectormap-2.0.3.css', array(), '20151215', true );
-};
-add_action( 'get_footer', 'crypto_add_footer_styles' );
+// function crypto_add_general_styles() {
+		
+// 		//wp_enqueue_style( 'crypto-vectormap-css', get_template_directory_uri() . '/js/vectormap/jquery-jvectormap-2.0.3.css', array(), '20151215', true );
+// };
+// add_action( 'vc_after_init', 'crypto_add_general_styles' );
 
 /**
  * Implement the Custom Header feature.
@@ -196,33 +197,48 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 }
 
 
+// Next - my own files
+//@author Vsevolod
+
 /**
- * Visual Composer Init
+ * Theme Variables
  */
-require get_template_directory() . '/theme/visual_composer_init.php';
+require get_template_directory() . '/theme/helpers/variables.php';
 
 /**
  * Theme Functions
  */
-require get_template_directory() . '/theme/theme-functions.php';
+require get_template_directory() . '/theme/helpers/functions.php';
+
+/**
+ * Theme Layout
+ */
+require get_template_directory() . '/theme/layout/functions.php';
+
+
+/**
+ * Visual Composer Init
+ */
+require get_template_directory() . '/theme/visual_composer/visual_composer_init.php';
+
 
 /**
  * Code for adminpanel
  */
-require get_template_directory() . '/theme/admin.php';
+require get_template_directory() . '/theme/admin/admin.php';
 
 /**
  * Create Page Options
  */
-require get_template_directory() . '/theme/admin-options.php';
+require get_template_directory() . '/theme/admin/admin-options.php';
 
 /**
  * Shortcodes
  */
-require get_template_directory() . '/theme/shortcodes.php';
+require get_template_directory() . '/theme/shortcodes/shortcodes.php';
 
 
 /**
  * Shortcodes
  */
-require get_template_directory() . '/theme/content/navigation-function.php';
+//require get_template_directory() . '/theme/content/navigation-function.php';

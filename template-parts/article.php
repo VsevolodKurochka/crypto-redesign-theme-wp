@@ -1,6 +1,12 @@
 <article id="post-<?php the_ID(); ?>" class="article-item">
 	<div class="article-item-inner">
-		<div class="article-item-image">
+		<?php 
+			$post_has_video = '';
+			if( get_field('article_video') ) : 
+				$post_has_video .= 'article-item-image_video';
+			endif;
+		?>
+		<div class="article-item-image <?php echo $post_has_video; ?>">
 			<?php if(has_post_thumbnail()): ?>
 				<a href="<?php the_permalink();?>"><?php the_post_thumbnail(); ?></a>
 			<?php else: ?>

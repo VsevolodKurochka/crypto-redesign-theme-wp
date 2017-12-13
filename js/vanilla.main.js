@@ -47,29 +47,29 @@ var exists = function exists(element) {
 		// Initialize scrolling effects
 		emergence.init();
 
-		// Anchors links
-		function scrollTo(element, to, duration) {
-			if (duration <= 0) return;
-			var difference = to - element.scrollTop - 75;
-			var perTick = difference / duration * 10;
-			setTimeout(function () {
-				element.scrollTop = element.scrollTop + perTick;
-				if (element.scrollTop === to) return;
-				scrollTo(element, to, duration - 10);
-			}, 10);
-		}
+		// // Anchors links
+		// function scrollTo(element, to, duration) {
+		// 	if (duration <= 0) return;
+		// 	var difference = to - element.scrollTop - 75;
+		// 	var perTick = difference / duration * 10;
+		// 	setTimeout(function () {
+		// 		element.scrollTop = element.scrollTop + perTick;
+		// 		if (element.scrollTop === to) return;
+		// 		scrollTo(element, to, duration - 10);
+		// 	}, 10);
+		// }
 
-		// Anchors
-		var anchors = document.getElementsByClassName('anchor');
+		// // Anchors
+		// var anchors = document.getElementsByClassName('anchor');
 
-		for (var _i = 0; _i < anchors.length; _i++) {
-			anchors[_i].addEventListener('click', function (e) {
-				e.preventDefault();
-				var href = this.getAttribute("href").replace("#", "");
-				var scrollAnchor = document.getElementById(href);
-				scrollTo(document.body, scrollAnchor.offsetTop, 600);
-			});
-		}
+		// for (var _i = 0; _i < anchors.length; _i++) {
+		// 	anchors[_i].addEventListener('click', function (e) {
+		// 		e.preventDefault();
+		// 		var href = this.getAttribute("href").replace("#", "");
+		// 		var scrollAnchor = document.getElementById(href);
+		// 		scrollTo(document.body, scrollAnchor.offsetTop, 600);
+		// 	});
+		// }
 
 		// Navigation
 		var jsNav = document.getElementById('navigation');

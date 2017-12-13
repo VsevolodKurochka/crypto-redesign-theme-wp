@@ -6,37 +6,37 @@ add_action( 'vc_before_init', 'vc_before_init_actions' );
 
 function vc_before_init_actions() {
 // Require new custom Element
-require_once( get_template_directory().'/theme/vc-elements/vc_new_title.php' ); 
+require_once( get_template_directory().'/theme/visual_composer/vc-elements/vc_new_title.php' ); 
 
 // Require new custom Element
-require_once( get_template_directory().'/theme/vc-elements/vc_new_partner.php' ); 
+require_once( get_template_directory().'/theme/visual_composer/vc-elements/vc_new_partner.php' ); 
 
 // Require new custom Element
-require_once( get_template_directory().'/theme/vc-elements/vc_new_icon.php' ); 
+require_once( get_template_directory().'/theme/visual_composer/vc-elements/vc_new_icon.php' ); 
 
 // Require new custom Element
-require_once( get_template_directory().'/theme/vc-elements/vc_new_quote.php' ); 
+require_once( get_template_directory().'/theme/visual_composer/vc-elements/vc_new_quote.php' ); 
 
 // Require new custom Element
-require_once( get_template_directory().'/theme/vc-elements/vc_new_numbers.php' ); 
+require_once( get_template_directory().'/theme/visual_composer/vc-elements/vc_new_numbers.php' ); 
 
 // Require new custom Element
-require_once( get_template_directory().'/theme/vc-elements/vc_new_event.php' ); 
+require_once( get_template_directory().'/theme/visual_composer/vc-elements/vc_new_event.php' ); 
 
 // Require new custom Element
-require_once( get_template_directory().'/theme/vc-elements/vc_new_event_large.php' ); 
+require_once( get_template_directory().'/theme/visual_composer/vc-elements/vc_new_event_large.php' ); 
 
 // Require new custom Element
-require_once( get_template_directory().'/theme/vc-elements/vc_new_video_review.php' ); 
+require_once( get_template_directory().'/theme/visual_composer/vc-elements/vc_new_video_review.php' ); 
 
 // Require new custom Element
-require_once( get_template_directory().'/theme/vc-elements/vc_new_screen_review.php' ); 
+require_once( get_template_directory().'/theme/visual_composer/vc-elements/vc_new_screen_review.php' ); 
 
 // Require new custom Element
-require_once( get_template_directory().'/theme/vc-elements/vc_new_partner_phase.php' );
+require_once( get_template_directory().'/theme/visual_composer/vc-elements/vc_new_partner_phase.php' );
 
 // Require new custom Element
-require_once( get_template_directory().'/theme/vc-elements/vc_new_partner_scheme.php' ); 
+require_once( get_template_directory().'/theme/visual_composer/vc-elements/vc_new_partner_scheme.php' ); 
 }
 
 
@@ -48,7 +48,7 @@ function crypto_redeclare_before_init_actions() {
 	// Link your VC elements's folder
 	if( function_exists('vc_set_shortcodes_templates_dir') ){ 
 	 
-			vc_set_shortcodes_templates_dir( get_template_directory() . '/theme/vc-elements' );
+			vc_set_shortcodes_templates_dir( get_template_directory() . '/theme/visual_composer/vc-elements' );
 			 
 	}
 	 

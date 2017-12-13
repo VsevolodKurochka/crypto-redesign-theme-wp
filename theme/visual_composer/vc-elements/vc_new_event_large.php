@@ -102,18 +102,18 @@ class vcEventLarge extends WPBakeryShortCode {
 											),
 											'std'         => 'online', // Your default value
 											'description' => __('Выберите формат:')
-										),
-										array(
-											'type' => 'textfield',
-											'holder' => 'div',
-											'class' => 'title-class',
-											'heading' => __( 'Количество просмотров:', 'crypto' ),
-											'param_name' => 'views',
-											'value' => "",
-											'description' => __( 'Введите количество просмотров.', 'crypto' ),
-											'admin_label' => false,
-											'weight' => 0
 										)
+										// array(
+										// 	'type' => 'textfield',
+										// 	'holder' => 'div',
+										// 	'class' => 'title-class',
+										// 	'heading' => __( 'Количество просмотров:', 'crypto' ),
+										// 	'param_name' => 'views',
+										// 	'value' => "",
+										// 	'description' => __( 'Введите количество просмотров.', 'crypto' ),
+										// 	'admin_label' => false,
+										// 	'weight' => 0
+										// )
 								),
 						)
 				);
@@ -133,8 +133,8 @@ class vcEventLarge extends WPBakeryShortCode {
 									'top_index'			=> '',
 									'sale'					=> '',
 									'link'					=> '',
-									'format'				=> '',
-									'views'					=> ''
+									'format'				=> ''
+									//'views'					=> ''
 								), 
 								$atts
 						)
@@ -178,9 +178,9 @@ class vcEventLarge extends WPBakeryShortCode {
 								</div>
 								<footer class="event-large-item__footer">
 									<p>'.$format.'</p>
-									<p><span class="event-large-item__views">'.$views.'</span></p>
+									
 								</footer>';  
-
+								// <p><span class="event-large-item__views">'.$views.'</span></p>
 						$return .= '</div>'; // End Text Column
 
 					$return .= '</div>';

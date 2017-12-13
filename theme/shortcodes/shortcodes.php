@@ -5,13 +5,14 @@ function blog_func($atts){
 		'per_page'			=> '15',
 		'row_class' 		=> 'vrow',
 		'column_class'	=> '',
-		'pagination'		=> "false"
+		'orderby'				=> 'date'
 	), $atts));
 
 	$args1 = array(
 		'post_type'				=> 'post',
 		'post_status'			=> 'publish',
-		'posts_per_page'	=> $per_page
+		'posts_per_page'	=> $per_page,
+		'orderby'					=> $orderby
 	);
 	$query = new WP_Query($args1);
 	if( $query->have_posts() ){
@@ -19,9 +20,11 @@ function blog_func($atts){
 		while ( $query->have_posts() ) {
 
 			$query->the_post();
-			ob_start();
-			get_template_part('template-parts/article');
-			$return .= ob_get_clean();
+			$return .= '<div class="'.$column_class.'">';
+				ob_start();
+				get_template_part('template-parts/article');
+				$return .= ob_get_clean();
+			$return .= '</div>';
 		}
 		$return .= '</div>';
 	}
@@ -57,9 +60,9 @@ function formShortcode($atts){
 	
 	if($phone == "true") :
 		if(get_locale() == 'ru_RU') :
-			$case_html .= '<div class="vform__row vform__row_phone"><input class="vform__control" name="phone" type="text" value="" placeholder="Ваш телефон" required /></div>';
+			$case_html .= '<div class="vform__row vform__row_phone"><input class="vform__control" name="phone" type="tel" id="phone" value="" placeholder="Ваш телефон" required /></div>';
 		else:
-			$case_html .= '<div class="vform__row vform__row_phone"><input class="vform__control" name="phone" type="text" value="" placeholder="Your phone" required /></div>';
+			$case_html .= '<div class="vform__row vform__row_phone"><input class="vform__control" name="phone" type="tel" id="phone" value="" placeholder="Your phone" required /></div>';
 		endif;
 		
 	endif;
@@ -140,6 +143,27 @@ function quote_entry($atts, $content = null){
 	return $return;
 }
 add_shortcode('q', 'quote_entry');
+
+function vmodal($atts, $content = null){
+	extract(shortcode_atts(array(
+		'title'	=> '',
+		'image'		=> ''
+	), $atts));
+	$return = '<div class="vmodal-content">';
+		if( !empty($image) ) :
+			$return .= '<div class="vmodal-content-part vmodal-content-part__image">';
+				$return .= '<img src="'.$image.'" alt="">';
+			$return .= '</div>';
+		endif;
+		$return .= '<div class="vmodal-content-part vmodal-content-part__content">';
+			$return .= '<p class="vmodal-content__title">'.$title.'</p>';
+			$return .= '<div class="vmodal-body">'.do_shortcode($content).'</div>';
+		$return .= '</div>';
+
+	$return .= '</div>';
+	return $return;
+}
+add_shortcode('vmodal', 'vmodal');
 
 // Allow using shortcode inside widget
 add_filter('widget_text','do_shortcode');

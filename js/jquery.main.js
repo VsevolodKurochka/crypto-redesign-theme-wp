@@ -205,14 +205,18 @@ jQuery(document).ready(function($){
 	var owlBlogOptions = {
 		items: 1,
 		margin: 30,
+		dots: true,
+		navText: ['<i class="vfa vfa-angle-left"></i>', '<i class="vfa vfa-angle-right"></i>'],
 		loop: true,
 		autoplay: true,
 		responsive: {
 			768: {
 				items: 2
 			},
-			1025: {
-				items: 3
+			992: {
+				items: 3,
+				nav: true,
+				dots: false
 			}
 		}
 	}
@@ -272,6 +276,17 @@ jQuery(document).ready(function($){
 		}
 	}
 
+
+	// If exists Header_wave
+		if( $('.vsite-header_wave').length > 0 ) {
+			$('.vsite-header_wave').append('<a href="#section-two" class="vsite-header__arrow-down"></a>');
+			$('.vsite-header__arrow-down').click(function(){
+				$('html, body').animate({
+					scrollTop: $( $(this).attr('href') ).offset().top - 125
+				}, 1500);
+				return false;
+			});
+		}
 
 	// Partner Page
 

@@ -2,10 +2,10 @@
 /*Template Name: Шаблон "Блог" */
 ?>
 <?php get_header(); ?>
-<section class="vsection">
+<section class="<?php echo $theme_section; ?>">
   <div class="vcontainer">
-    <div class="vrow">
-      <div class="vcol-12 vcol-md-8">
+    <div class="<?php echo $theme_row; ?>">
+      <div class="<?php echo $theme_part_content; ?>">
         <div class="vrow">
         	<?php rewind_posts();
 						$paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
@@ -21,24 +21,24 @@
               <?php get_template_part('template-parts/article'); ?>
             </div>
           <?php endwhile;  else: ?>
-            <p class="vtitle">
+           <!--  <p class="vtitle"> -->
               <?php 
-                if( is_search() ) : 
-                  if(!have_posts()) :
-                    echo 'Мы ничего не нашли. Попробуйте с другим поисковым запросом.';
-                  endif;
-                else:
-                  echo 'Записи появятся в скором времени';
-                endif;
+                // if( is_search() ) : 
+                //   if(!have_posts()) :
+                //     echo 'Мы ничего не нашли. Попробуйте с другим поисковым запросом.';
+                //   endif;
+                // else:
+                //   echo 'Записи появятся в скором времени';
+                // endif;
               ?>
-            </p>
+            <!-- </p> -->
           <?php endif;  ?>
         </div>
         <div class="navigation">
           <?php wp_pagenavi(); wp_reset_query(); ?>
         </div>
       </div>
-      <div class="vcol-12 vcol-md-4">
+      <div class="<?php echo $theme_part_sidebar; ?>">
         <?php get_template_part( 'sidebar'); ?> 
       </div>
     </div>

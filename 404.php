@@ -9,7 +9,7 @@
 
 get_header(); ?>
 
-	<div class="page-404 site-greeting bg-gradient">
+	<!-- <div class="page-404 site-greeting bg-gradient">
 		<div class="vcontainer section-text page-404-container">
 			<div class="coin">
 				<ul class="component list-style-none parallax-move" id="scene">
@@ -27,7 +27,7 @@ get_header(); ?>
 			<h2 class="page-404__description">Ошибка! Страница не найдена.</h2>
 			</div>
 		</div>
-	</div>
+	</div> -->
 
 <?php
 get_footer();

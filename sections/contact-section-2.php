@@ -67,6 +67,7 @@
 									<?php echo get_option('manager_telegram'); ?>
 								</p>
 								<a class="manager__envelope" href="<?php echo get_option('manager_envelope'); ?>">
+									<i class="manager__telegram-icon vfa vfa-envelope"></i>
 									<?php echo get_option('manager_envelope'); ?>
 								</a>
 							</div>
